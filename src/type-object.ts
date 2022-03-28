@@ -21,3 +21,18 @@ const myObj =
 const isInstance = myObj instanceof Object; //clase Object de Js
 console.log(`isInstance`, isInstance);
 console.log(`user.userName`, myObj.userName);
+
+interface Nombre {
+    id: number;
+    userName: string;
+    firstName: string;
+    isPro: boolean;
+}
+
+const myObj2: Nombre =
+{
+    id : 1,
+    userName: 'Ricardo',
+    firstName: 'Ramirez',
+    isPro: true
+}

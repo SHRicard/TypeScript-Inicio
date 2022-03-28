@@ -19,3 +19,9 @@ const myObj = {
 const isInstance = myObj instanceof Object; //clase Object de Js
 console.log(`isInstance`, isInstance);
 console.log(`user.userName`, myObj.userName);
+const myObj2 = {
+    id: 1,
+    userName: 'Ricardo',
+    firstName: 'Ramirez',
+    isPro: true
+};
