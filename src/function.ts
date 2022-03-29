@@ -1,3 +1,4 @@
+export {};
 // Crear una fotografias con js
 // function createPhone(title, data , size){
 // }
@@ -40,4 +41,28 @@ let createPic = (title?: string, date?: number, size?: SquareSize): object => {
 
 const picture= createPic("platzi " , 1 , "100x100");
 console.log(picture);
+// tipo de retorno con TypeScript
 
+function handelError(code: number, message: string): never | string {
+    // throw new Error(`${message} ${code}`);
+    if(message === "error"){
+      throw new Error(`${message}. Code Error :  ${code}`);
+        
+    }else 
+    {
+        return "An error has ocurred";
+    }
+}
+try{
+    
+    let result = handelError(200, "ok");
+    console.log(result);
+    result = handelError(400, "error");
+
+
+
+}
+catch (error) {
+
+
+}
