@@ -62,7 +62,22 @@ console.log(picture);
   picture = generatePicture({date: '1991'});
   console.log('picture', picture);
 
+//Intefaz : Userio
 
+interface User{
+   readonly id : number; // readonly es un atributo de solo lectura
+    userName: string;
+    isPro: boolean;
+}
 
+let user : User;
+user = {
+    id : 10,
+    userName:"Ricardo",
+    isPro: true
+}
+console.log(user);
+user.userName = "Ramirez"
 
+console.log(user);
 

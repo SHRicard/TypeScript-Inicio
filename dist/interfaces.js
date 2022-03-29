@@ -41,3 +41,12 @@ picture = generatePicture({ title: 'Test' });
 console.log('picture', picture);
 picture = generatePicture({ date: '1991' });
 console.log('picture', picture);
+let user;
+user = {
+    id: 10,
+    userName: "Ricardo",
+    isPro: true
+};
+console.log(user);
+user.userName = "Ramirez";
+console.log(user);
