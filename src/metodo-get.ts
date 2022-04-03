@@ -49,9 +49,17 @@ class Albut  {
         this._id = id;
         this._title = title;
         this._picture = [];
-
-
     }
+    get id (){return this._id;}
+    set id(id: number) {this._id = id;}
+
+    get title(){return this._title }
+    set title(title: string) {this._title = title; }
+
+    get picture(){return this._picture}
+    set picture(o:PhotoOrientation) {this._picture = o;}
+
+
 addPicture(picture: Picture){
     this.picture.push(picture);
 }
@@ -71,6 +79,11 @@ console.log(album);
 
 
 // accediendo a los mientros private
+
+ picture.id = 120; // deja de ser public y pasa a privado con el atributo "___private__"
+ picture.title = 'Ricardo Ramirez';// deja de ser public y pasa a privado con el atributo "___private__"
+ album.title = 'Personal Activities';// deja de ser public y pasa a privado con el atributo "___private__"
+ console.log(album);
  console.log(album);
 
 
